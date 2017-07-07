@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>robotiq_arg2f_model_visualization</name>
+  <name>robotiq_140_description</name>
   <version>1.0.0</version>
   <description>Robotiq ARG 2-Finger 140mm model</description>
   <license>BSD</license>
