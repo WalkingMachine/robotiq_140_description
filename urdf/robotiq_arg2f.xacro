@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:macro name="robotiq_arg2f_base_link" params="prefix">
-    <link name="${prefix}robotiq_arg2f_base_link">
+  <xacro:macro name="robotiq_arg2f_link" params="prefix">
+    <link name="robotiq_arg2f_link">
       <inertial>
         <origin xyz="8.625E-08 -4.6583E-06 0.03145" rpy="0 0 0" />
         <mass value="0.22652" />
@@ -13,7 +13,7 @@
           <mesh filename="package://robotiq_140_description/meshes/robotiq_arg2f_base_link_fine.stl" />
         </geometry>
         <material name="">
-          <color rgba="0.1 0.1 0.1 1" />
+          <color rgba="0.5 0.5 0.5 1" />
         </material>
       </visual>
       <collision>

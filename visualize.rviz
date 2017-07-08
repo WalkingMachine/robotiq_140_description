@@ -7,6 +7,10 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1
+        - /TF1
+        - /TF1/Frames1
+        - /TF1/Tree1
+        - /TF1/Tree1/robotiq_arg2f_base_link1
       Splitter Ratio: 0.494145185
     Tree Height: 404
   - Class: rviz/Selection
@@ -111,19 +115,49 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
+        left_inner_finger:
+          Value: true
+        left_inner_knuckle:
+          Value: false
+        left_outer_finger:
+          Value: false
+        left_outer_knuckle:
+          Value: false
+        right_inner_finger:
+          Value: false
+        right_inner_knuckle:
+          Value: false
+        right_outer_finger:
+          Value: false
+        right_outer_knuckle:
+          Value: false
+        robotiq_arg2f_base_link:
+          Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        {}
+        robotiq_arg2f_base_link:
+          left_inner_knuckle:
+            {}
+          left_outer_knuckle:
+            left_outer_finger:
+              left_inner_finger:
+                {}
+          right_inner_knuckle:
+            {}
+          right_outer_knuckle:
+            right_outer_finger:
+              right_inner_finger:
+                {}
       Update Interval: 0
-      Value: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -162,10 +196,10 @@ Visualization Manager:
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.239796132
+      Pitch: 0.599795938
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.117217287
+      Yaw: 3.20539737
     Saved: ~
 Window Geometry:
   Displays:
